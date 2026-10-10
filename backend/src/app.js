@@ -25,6 +25,8 @@ app.use("/api/auth", require("./routes/authRoutes"));
 app.use("/api/admin", require("./routes/adminRoutes"));
 app.use("/api/ratings", require("./routes/ratingRoutes"));
 app.use("/api/stores", require("./routes/storeRoutes"));
+app.use("/api/owner", require("./routes/ownerRoutes"));
+app.use("/api/password", require("./routes/passwordRoutes"));
 
 app.use((req,res) => {
     res.status(404).json({
